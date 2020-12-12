@@ -34,7 +34,7 @@ public class OosAboutPreference extends Preference {
 
     private static void setInfo(String prop, TextView textview) {
         if (TextUtils.isEmpty(getSystemProperty(prop))) {
-            textview.setText("Unknown");
+            textview.setText("KARTHIK.LAL");
 	} else {
             if (prop.equals("ro.octavi.maintainer")) {
 	        String str = getSystemProperty(prop);
@@ -48,7 +48,7 @@ public class OosAboutPreference extends Preference {
 
     private static void setInfo(String prop, String prop2, TextView textview) {
         if (TextUtils.isEmpty(getSystemProperty(prop)) && TextUtils.isEmpty(getSystemProperty(prop2))) {
-            textview.setText("Unknown");
+            textview.setText("v1.3 Official");
 	} else {
             textview.setText(String.format("v%s %s", getSystemProperty(prop), getSystemProperty(prop2)));
         }
